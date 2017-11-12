@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,13 +16,51 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afs-XC-aOh">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7C-Bu-6SJ">
+                                <rect key="frame" x="300" y="0.0" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.1803921568627451" green="0.80000000000000004" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRl-w6-Y8x">
+                                <rect key="frame" x="0.0" y="300" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.13333333333333333" green="0.65490196078431373" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0H-Rp-nNe">
+                                <rect key="frame" x="300" y="300" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.58039215686274503" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="c0H-Rp-nNe" secondAttribute="bottom" id="6Hh-gx-vGJ"/>
+                            <constraint firstItem="h7C-Bu-6SJ" firstAttribute="leading" secondItem="afs-XC-aOh" secondAttribute="trailing" id="A6B-Jb-oUh"/>
+                            <constraint firstItem="afs-XC-aOh" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="Ckz-pY-A6p"/>
+                            <constraint firstItem="h7C-Bu-6SJ" firstAttribute="width" secondItem="afs-XC-aOh" secondAttribute="width" id="Dkc-PD-hH9"/>
+                            <constraint firstItem="c0H-Rp-nNe" firstAttribute="width" secondItem="afs-XC-aOh" secondAttribute="width" id="GCy-fI-Gbg"/>
+                            <constraint firstItem="KRl-w6-Y8x" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="IxD-3i-aob"/>
+                            <constraint firstItem="KRl-w6-Y8x" firstAttribute="width" secondItem="afs-XC-aOh" secondAttribute="width" id="Nf0-iN-98B"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="KRl-w6-Y8x" secondAttribute="bottom" id="RzH-ND-YjM"/>
+                            <constraint firstItem="c0H-Rp-nNe" firstAttribute="top" secondItem="h7C-Bu-6SJ" secondAttribute="bottom" id="Srl-6d-7eM"/>
+                            <constraint firstItem="afs-XC-aOh" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="UkF-67-25R"/>
+                            <constraint firstItem="c0H-Rp-nNe" firstAttribute="leading" secondItem="KRl-w6-Y8x" secondAttribute="trailing" id="UxI-RP-iQx"/>
+                            <constraint firstItem="c0H-Rp-nNe" firstAttribute="height" secondItem="afs-XC-aOh" secondAttribute="height" id="VSn-so-4ux"/>
+                            <constraint firstAttribute="trailing" secondItem="c0H-Rp-nNe" secondAttribute="trailing" id="ZFL-gO-4Bx"/>
+                            <constraint firstItem="h7C-Bu-6SJ" firstAttribute="height" secondItem="afs-XC-aOh" secondAttribute="height" id="Zsv-q3-qSq"/>
+                            <constraint firstAttribute="trailing" secondItem="h7C-Bu-6SJ" secondAttribute="trailing" id="hey-Ic-hYp"/>
+                            <constraint firstItem="KRl-w6-Y8x" firstAttribute="top" secondItem="afs-XC-aOh" secondAttribute="bottom" id="jeC-wJ-prL"/>
+                            <constraint firstItem="h7C-Bu-6SJ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="o4l-sC-Jkm"/>
+                            <constraint firstItem="KRl-w6-Y8x" firstAttribute="height" secondItem="afs-XC-aOh" secondAttribute="height" id="sjf-iK-lfA"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="757" y="587"/>
         </scene>
     </scenes>
 </document>

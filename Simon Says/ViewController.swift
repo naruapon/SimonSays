@@ -9,17 +9,32 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var highscoreLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        highscoreLabel.text = "Highscore: " + String(UserDefaults.standard.integer(forKey: "Highscore"))
     }
-
+    
+    @IBAction func startGame(_ sender: AnyObject?) {
+        let gameData = GameData(multiplayer: false)
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "ColorViewController") as? ColorViewController {
+            vc.gameData = gameData
+            present(vc, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func startMultiPlayerGame(_ sender: AnyObject?) {
+        let gameData = GameData(multiplayer: true)
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "ColorViewController") as? ColorViewController {
+            vc.gameData = gameData
+            present(vc, animated: true, completion: nil)
+        }
+    }
 
 }
 

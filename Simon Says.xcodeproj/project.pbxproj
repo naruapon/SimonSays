@@ -14,6 +14,12 @@
 		D4EDB57D1CB4EA53003E59DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4EDB57B1CB4EA53003E59DF /* LaunchScreen.storyboard */; };
 		D4EDB5881CB4EA53003E59DF /* Simon_SaysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EDB5871CB4EA53003E59DF /* Simon_SaysTests.swift */; };
 		D4EDB5931CB4EA53003E59DF /* Simon_SaysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EDB5921CB4EA53003E59DF /* Simon_SaysUITests.swift */; };
+		D4EDB5A61CB4EE3E003E59DF /* ButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EDB5A51CB4EE3E003E59DF /* ButtonsViewController.swift */; };
+		D4EDB5A91CB4F362003E59DF /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EDB5A81CB4F362003E59DF /* ColorViewController.swift */; };
+		D4EDB5AB1CB4F3CF003E59DF /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EDB5AA1CB4F3CF003E59DF /* GameData.swift */; };
+		D4EDB5AD1CB4F9AC003E59DF /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EDB5AC1CB4F9AC003E59DF /* ColorButton.swift */; };
+		D4EDB5B01CB501DF003E59DF /* correct.aiff in Resources */ = {isa = PBXBuildFile; fileRef = D4EDB5AE1CB501DF003E59DF /* correct.aiff */; };
+		D4EDB5B11CB501DF003E59DF /* wrong.aiff in Resources */ = {isa = PBXBuildFile; fileRef = D4EDB5AF1CB501DF003E59DF /* wrong.aiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		D4EDB58E1CB4EA53003E59DF /* Simon SaysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simon SaysUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4EDB5921CB4EA53003E59DF /* Simon_SaysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simon_SaysUITests.swift; sourceTree = "<group>"; };
 		D4EDB5941CB4EA53003E59DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4EDB5A51CB4EE3E003E59DF /* ButtonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
+		D4EDB5A81CB4F362003E59DF /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		D4EDB5AA1CB4F3CF003E59DF /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		D4EDB5AC1CB4F9AC003E59DF /* ColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
+		D4EDB5AE1CB501DF003E59DF /* correct.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = correct.aiff; sourceTree = "<group>"; };
+		D4EDB5AF1CB501DF003E59DF /* wrong.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = wrong.aiff; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +110,12 @@
 			isa = PBXGroup;
 			children = (
 				D4EDB5721CB4EA53003E59DF /* AppDelegate.swift */,
-				D4EDB5741CB4EA53003E59DF /* ViewController.swift */,
-				D4EDB5761CB4EA53003E59DF /* Main.storyboard */,
-				D4EDB5791CB4EA53003E59DF /* Assets.xcassets */,
-				D4EDB57B1CB4EA53003E59DF /* LaunchScreen.storyboard */,
 				D4EDB57E1CB4EA53003E59DF /* Info.plist */,
+				D4EDB5A41CB4EB2B003E59DF /* Sounds */,
+				D4EDB5A31CB4EB23003E59DF /* Custom UI */,
+				D4EDB5A21CB4EB1F003E59DF /* UI */,
+				D4EDB5A11CB4EB19003E59DF /* Logic */,
+				D4EDB5A01CB4EB10003E59DF /* Controller */,
 			);
 			path = "Simon Says";
 			sourceTree = "<group>";
@@ -123,6 +136,51 @@
 				D4EDB5941CB4EA53003E59DF /* Info.plist */,
 			);
 			path = "Simon SaysUITests";
+			sourceTree = "<group>";
+		};
+		D4EDB5A01CB4EB10003E59DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D4EDB5741CB4EA53003E59DF /* ViewController.swift */,
+				D4EDB5A51CB4EE3E003E59DF /* ButtonsViewController.swift */,
+				D4EDB5A81CB4F362003E59DF /* ColorViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D4EDB5A11CB4EB19003E59DF /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				D4EDB5AA1CB4F3CF003E59DF /* GameData.swift */,
+				D4EDB5AC1CB4F9AC003E59DF /* ColorButton.swift */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		D4EDB5A21CB4EB1F003E59DF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D4EDB5761CB4EA53003E59DF /* Main.storyboard */,
+				D4EDB5791CB4EA53003E59DF /* Assets.xcassets */,
+				D4EDB57B1CB4EA53003E59DF /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		D4EDB5A31CB4EB23003E59DF /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Custom UI";
+			sourceTree = "<group>";
+		};
+		D4EDB5A41CB4EB2B003E59DF /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D4EDB5AE1CB501DF003E59DF /* correct.aiff */,
+				D4EDB5AF1CB501DF003E59DF /* wrong.aiff */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,18 +246,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Rume Academy";
 				TargetAttributes = {
 					D4EDB56E1CB4EA53003E59DF = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 					};
 					D4EDB5821CB4EA53003E59DF = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 						TestTargetID = D4EDB56E1CB4EA53003E59DF;
 					};
 					D4EDB58D1CB4EA53003E59DF = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 						TestTargetID = D4EDB56E1CB4EA53003E59DF;
 					};
 				};
@@ -229,8 +290,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4EDB5B11CB501DF003E59DF /* wrong.aiff in Resources */,
 				D4EDB57D1CB4EA53003E59DF /* LaunchScreen.storyboard in Resources */,
 				D4EDB57A1CB4EA53003E59DF /* Assets.xcassets in Resources */,
+				D4EDB5B01CB501DF003E59DF /* correct.aiff in Resources */,
 				D4EDB5781CB4EA53003E59DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +320,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4EDB5751CB4EA53003E59DF /* ViewController.swift in Sources */,
+				D4EDB5AB1CB4F3CF003E59DF /* GameData.swift in Sources */,
+				D4EDB5A61CB4EE3E003E59DF /* ButtonsViewController.swift in Sources */,
+				D4EDB5AD1CB4F9AC003E59DF /* ColorButton.swift in Sources */,
+				D4EDB5A91CB4F362003E59DF /* ColorViewController.swift in Sources */,
 				D4EDB5731CB4EA53003E59DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,8 +393,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -372,8 +441,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -392,6 +463,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -405,6 +477,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rume.Simon-Says";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -416,6 +489,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rume.Simon-Says";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -427,6 +501,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rume.Simon-SaysTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simon Says.app/Simon Says";
 			};
 			name = Debug;
@@ -439,6 +514,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rume.Simon-SaysTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simon Says.app/Simon Says";
 			};
 			name = Release;
@@ -450,6 +526,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rume.Simon-SaysUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Simon Says";
 			};
 			name = Debug;
@@ -461,6 +538,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rume.Simon-SaysUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Simon Says";
 			};
 			name = Release;
@@ -484,6 +562,7 @@
 				D4EDB5991CB4EA53003E59DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4EDB59A1CB4EA53003E59DF /* Build configuration list for PBXNativeTarget "Simon SaysTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +571,7 @@
 				D4EDB59C1CB4EA53003E59DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4EDB59D1CB4EA53003E59DF /* Build configuration list for PBXNativeTarget "Simon SaysUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +580,7 @@
 				D4EDB59F1CB4EA53003E59DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
